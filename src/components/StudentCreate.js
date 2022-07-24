@@ -1,19 +1,19 @@
 import React from 'react'
-import {Edit,SimpleForm,TextInput,DateInput} from "react-admin"
-const StudentEdit = (props) => {
+import {Create,SimpleForm,TextInput,DateInput} from "react-admin"
+const StudentCreate = (props) => {
   return (
-    <div><Edit title="Edit Student List"{...props}>
+    <div><Create title="Create a Student"{...props}>
         <SimpleForm>
-            <TextInput disabled source="id"/>
+            <TextInput source="id"/>
             <TextInput source="name"/>
             <TextInput source="course"/>
             <TextInput source="email"/>
             <DateInput source="joinedAt"/>
             <TextInput source="batchNo"/>
         </SimpleForm>
-        </Edit>
+        </Create>
         </div>
   )
 }
 
-export default StudentEdit
+export default StudentCreate
